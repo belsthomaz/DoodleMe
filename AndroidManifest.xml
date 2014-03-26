@@ -26,15 +26,14 @@
             android:name="bels.ctec.activity.CanvasActivity"
             android:label="@string/title_activity_canvas" >
         </activity>
-        <activity
-            android:name="bels.ctec.activity.the meny java no extension" android:label="@string/app_name">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
-        </activity>
-        <activity android:name="other files each get this">
-        </activity>
+       <activity android:name="DoodleActivity.the menu java no extension" android:label="@string/app_name">
+			<intent-filter>
+
+					<action android:name="android.intent.action.MAIN" />
+					<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity android:name="other files each get this"></activity>
     </application>
 
 </manifest>
