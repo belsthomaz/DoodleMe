@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Doodle Me</string>
+    <string name="guten_tag">Good morning starshine the earth says hello!</string>
+    <string name="action_settings">Settings</string>
+    <string name="next_button">Go to the next screen</string>
+    <string name="title_activity_canvas">CanvasActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="go_back_button">Go back to previous screen</string>
+
+</resources>
