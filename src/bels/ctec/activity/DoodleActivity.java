@@ -24,18 +24,27 @@ public class DoodleActivity extends Activity
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_doodle);
 
+		accessCanvasActivityButton = (Button)findViewById(R.id.button1);
 		if (savedInstanceState == null)
 		{
 			getFragmentManager().beginTransaction().add(R.id.container, new PlaceholderFragment()).commit();
 		}
+		
+		setupListeners();
 	}
 	
-	public void onClick(View view)
+	private void setupListeners()
 	{
-		Intent myIntent = new Intent(view.getContext(), CanvasActivity.class);
-		startActivityForResult(myIntent, 0);
+		accessCanvasActivityButton.setOnClickListener(new View.OnClickListener()
+		{
+			public void onClick(View view)
+			{
+				Intent myIntent = new Intent(view.getContext(), CanvasActivity.class);
+				startActivityForResult(myIntent, 0);
+			}
+		});
 	}
-
+	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu)
 	{

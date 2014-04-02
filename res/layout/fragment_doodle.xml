@@ -8,19 +8,42 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="bels.ctec.activity.DoodleActivity$PlaceholderFragment" >
 
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp" />
+
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/guten_tag" />
 
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="28dp" />
+
     <Button
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="16dp"
+        android:text="@string/next_button" />
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/textView1"
         android:layout_below="@+id/textView1"
-        android:layout_marginTop="16dp"
-        android:text= "@string/next_button" />
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="54dp"
+        android:src="@android:drawable/btn_star" />
 
 </RelativeLayout>

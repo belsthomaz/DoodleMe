@@ -16,7 +16,7 @@ import android.os.Build;
 
 public class CanvasActivity extends Activity
 {
-	private Button retrunToDoodleActivityButton;
+	private Button returnToDoodleActivityButton;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
@@ -24,17 +24,26 @@ public class CanvasActivity extends Activity
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_canvas);
 
+		returnToDoodleActivityButton = (Button)findViewById(R.id.returnButton);
 		if (savedInstanceState == null)
 		{
 			getFragmentManager().beginTransaction().add(R.id.container, new PlaceholderFragment()).commit();
 		}
+		
+		setupListeners();
 	}
 	
-	public void onClick(View view)
+	private void setupListeners()
 	{
-		Intent intent = new Intent();
-		setResult(RESULT_OK, intent);
-		finish();
+		returnToDoodleActivityButton.setOnClickListener(new View.OnClickListener()
+		{
+			public void onClick(View view)
+			{
+				Intent intent = new Intent();
+				setResult(RESULT_OK, intent);
+				finish();
+			}
+		});
 	}
 	
 	@Override
