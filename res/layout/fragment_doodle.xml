@@ -36,14 +36,4 @@
         android:layout_marginBottom="16dp"
         android:text="@string/next_button" />
 
-    <ImageButton
-        android:id="@+id/imageButton1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView1"
-        android:layout_below="@+id/textView1"
-        android:layout_marginLeft="68dp"
-        android:layout_marginTop="54dp"
-        android:src="@android:drawable/btn_star" />
-
 </RelativeLayout>
